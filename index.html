@@ -83,8 +83,16 @@
             font-size: 2.5em;
             font-weight: bold;
             color: #8B1538;
-            margin-bottom: 10px;
+            margin-bottom: 5px;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .event-time {
+            font-size: 1.5em;
+            font-weight: 600;
+            color: #6B0F2B;
+            margin-bottom: 15px;
+            display: block;
         }
 
         .event-venue {
@@ -125,15 +133,16 @@
             box-shadow: 0 5px 20px rgba(139, 21, 56, 0.4);
             transition: all 0.3s ease;
             border: 2px solid rgba(255, 255, 255, 0.2);
-            cursor: not-allowed;
-            opacity: 0.7;
+            /* ACTIVATED: Removed cursor: not-allowed and opacity: 0.7 */
+            cursor: pointer;
+            opacity: 1;
             position: relative;
         }
 
         .cta-button:hover {
             transform: translateY(-2px);
-            box-shadow: 0 7px 25px rgba(139, 21, 56, 0.5);
-            opacity: 0.8;
+            box-shadow: 0 7px 25px rgba(139, 21, 56, 0.6);
+            background: linear-gradient(135deg, #A52045 0%, #8B1538 100%);
         }
 
         .coming-soon {
@@ -334,6 +343,10 @@
                 font-size: 2em;
             }
 
+            .event-time {
+                font-size: 1.2em;
+            }
+
             .event-venue {
                 font-size: 1.1em;
             }
@@ -379,7 +392,6 @@
     </header>
 
     <div class="container">
-        <!-- Hero Section with Poster -->
         <div class="hero">
             <div class="poster-container">
                 <img src="poster.jpeg" alt="Makar Sankranti 2026 Poster">
@@ -387,6 +399,8 @@
             
             <div class="event-details">
                 <div class="event-date">📅 10 January 2026</div>
+                <div class="event-time">🕒 09:00 AM - 06:00 PM</div>
+                
                 <div class="event-venue">
                     📍 Kulturzentrum Neun<br>
                     Elisabethstraße 9a, 85051 Ingolstadt
@@ -398,13 +412,11 @@
                 </a>
                 <br><br>
                 <a href="https://ticketverz.com/eventselection/makar-sankranthi-celebrations-by-ingolstadt-telugu-people/0957d07d0c" class="cta-button">
-                    Registration
-                    <!-- <span class="coming-soon">Booking Open</span> -->
+                    Register Now
                 </a>
             </div>
         </div>
 
-        <!-- Welcome Section -->
         <div class="content-section">
             <h2 class="section-title">Welcome to the Celebration of Makar Sankranti</h2>
             <p class="intro-text">"Celebrating the harvest, the Sun, and the spirit of togetherness."</p>
@@ -413,7 +425,6 @@
             </p>
         </div>
 
-        <!-- Spirit of Makar Sankranti -->
         <div class="content-section">
             <h2 class="section-title">The Spirit of Makar Sankranti</h2>
             <p class="description">
@@ -421,7 +432,6 @@
             </p>
         </div>
 
-        <!-- Celebrations Across India -->
         <div class="content-section">
             <h2 class="section-title">Celebrations Across India</h2>
             <div class="celebration-grid">
@@ -444,7 +454,6 @@
             </div>
         </div>
 
-        <!-- Sankranthi in Telugu States -->
         <div class="content-section">
             <h2 class="section-title">Sankranthi in Telugu States</h2>
             <p class="description">
@@ -475,30 +484,6 @@
             </div>
         </div>
 
-        <!-- Traditional Foods -->
-        <!-- <div class="content-section">
-            <h2 class="section-title">Traditional Telugu Sankranthi Foods</h2>
-            <div class="food-list">
-                <div class="food-item">
-                    <h3>Ariselu / Adhirasam</h3>
-                    <p>Rice flour and jaggery sweet symbolizing prosperity</p>
-                </div>
-                <div class="food-item">
-                    <h3>Chakkara Pongali</h3>
-                    <p>Sweet Pongal cooked with ghee and cashews</p>
-                </div>
-                <div class="food-item">
-                    <h3>Bobbatlu / Puran Poli</h3>
-                    <p>Sweet stuffed flatbread shared with guests</p>
-                </div>
-                <div class="food-item">
-                    <h3>Pulihora</h3>
-                    <p>Tangy tamarind rice for festive meals</p>
-                </div>
-            </div>
-        </div> -->
-
-        <!-- Cultural Essence -->
         <div class="content-section">
             <h2 class="section-title">Cultural Essence</h2>
             <p class="description">
@@ -506,7 +491,6 @@
             </p>
         </div>
 
-        <!-- Final Message -->
         <div class="content-section">
             <div class="highlight-box">
                 <p class="highlight-quote">
@@ -516,7 +500,6 @@
         </div>
     </div>
 
-    <!-- Footer -->
     <footer>
         <div class="footer-content">
             <div class="footer-title">Presented by Ingolstadt Telugu People</div>
@@ -525,6 +508,4 @@
         </div>
     </footer>
 </body>
-
 </html>
-
